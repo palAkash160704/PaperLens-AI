@@ -1,0 +1,81 @@
+{
+  "paper_id": "platoon_paper_d54d32",
+  "paper_title": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques",
+  "core_problem": "The fundamental challenge is the lack of an integrated architecture for large-scale vehicle platoon scheduling and planning, which is essential for industrialized applications and maximizing economic benefits [2]. While platoon control technology has matured to enable basic driving functions, existing scheduling and planning techniques remain fragmented and have not been adequately summarized or integrated into a system that maximizes commercial value [3]. The paper addresses the need to move from micro-scale control (longitudinal spacing, string stability) to macro-scale operations (formation, resource allocation, intersection scheduling) to support the transition of platoon technology into large-scale commercial use [3,4].",
+  "proposed_architecture": "The paper proposes an integrated architecture that unifies independent platoon scheduling and planning techniques to meet the demands of large-scale applications [2]. This architecture involves a hierarchical communication structure among vehicle platoons, roadside controllers, and cloud servers [3]. The system utilizes Vehicle-to-Everything (V2X) communication, where vehicles handle longitudinal control via V2V, roadside controllers manage traffic equipment and provide recommended speeds for specific road structures, and cloud servers handle platoon formation and route planning [3]. The review categorizes the underlying techniques into five general methods: rule-based (heuristic, FSM, APF), model-based, optimization (ILP, DP), learning-based, and multi-agent methods, noting that hybrid approaches are often used to balance real-time performance and optimality [6,7].",
+  "datasets_and_benchmarks": "The paper reviews simulation platforms and datasets used for vehicle platoon scheduling and planning, including communication simulators like NS-2, NS-3, and OMNet++, and traffic simulators such as SUMO, CORSIM, and VISSIM [5]. It also references practical application projects and benchmarks such as EnergyITS, KONVOI, PATH, the Westwell Q-Truck, the SAIC Motor 5G+L4 project, and the Tongji University GALVP project [4,5]. The evaluation focuses on metrics such as air resistance reduction, fuel consumption, road capacity, and the ability to maintain string stability and safe inter-vehicle distances (e.g., reducing distance to 0.4 m) [2,3].",
+  "key_results": "The paper is a review and does not present new experimental results but synthesizes existing findings. Key quantitative insights include the capability of platoon systems to reduce inter-vehicle distance to 0.4 m, significantly reducing air resistance and improving traffic efficiency [3]. It highlights that heuristic methods offer good real-time performance but yield suboptimal solutions, while distributed heuristics perform slightly worse than centralized methods in terms of speed adjustments [7]. The review identifies that platoon technology has evolved from L1 cruise control to L4 high driving automation, with CACC and platoon technologies liberating drivers from accelerator, brake, and steering control [2]. It concludes that integrating these techniques is urgent to realize the exceptional value of platoon technology for commercial freight [3].",
+  "stated_limitations": "The authors note that rule-based methods, such as heuristics and FSMs, have limited effectiveness in complex and rare situations due to the inability to cover all real-world scenarios with a finite set of rules [6,7]. FSMs specifically struggle with complex environments containing an infinite number of situations, as adding new states can cause conflicts and complicate jump logic [7]. Heuristic methods generally only obtain suboptimal solutions, and the gap between suboptimal and optimal solutions is difficult to predict [7]. Additionally, platoon technology is limited to specific scenarios of vehicle formations and is not expected to develop into full L5 driving automation [3]. The paper also highlights that existing reviews primarily focus on micro-level control and communication, leaving a gap in macro-level scheduling and planning integration [3,6].",
+  "citations": [
+    {
+      "citation_index": 1,
+      "node_id": "platoon_paper_d54d32_chunk_0",
+      "paper_id": "platoon_paper_d54d32",
+      "paper_title": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques",
+      "section_header": "Abstract / Preamble",
+      "page_number": 1,
+      "snippet": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques\n\nJing Hou a , Guang Chen a,b,⇑ , Jin Huang c , Yingjun Qiao d,e\n\n, Lu Xiong a , Fuxi Wen c , Alois Knoll f ,\n\nChangjun Jiang e a School of Automotive Studies, Tongji Univ",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 2,
+      "node_id": "platoon_paper_d54d32_chunk_1",
+      "paper_id": "platoon_paper_d54d32",
+      "paper_title": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques",
+      "section_header": "abstract",
+      "page_number": 1,
+      "snippet": "Through vehicle-to-vehicle (V2V) communication, autonomizing a vehicle platoon can significantly reduce the distance between vehicles, thereby reducing air resistance and improving road traffic effi￾ciency. The gradual maturation of platoon control technology is enabling vehicle platoons to achieve",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 3,
+      "node_id": "platoon_paper_d54d32_chunk_2",
+      "paper_id": "platoon_paper_d54d32",
+      "paper_title": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques",
+      "section_header": "abstract",
+      "page_number": 2,
+      "snippet": "vehicles can make more reasonable decisions. In comparison with a CACC system, a platoon system can further reduce the distance between vehicles to 0.4 m, which greatly reduces air resistance and improves road traffic efficiency [7]. This collaborative driving\n\ntechnology can share perception and de",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 4,
+      "node_id": "platoon_paper_d54d32_chunk_3",
+      "paper_id": "platoon_paper_d54d32",
+      "paper_title": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques",
+      "section_header": "abstract",
+      "page_number": 2,
+      "snippet": "and planning techniques to form a comprehensive scheduling and planning system. This paper not only summarizes the methods of scheduling and planning algorithms but also sorts out project applications. This paper is dedicated to answering the following\n\nquestions: (1) What methods can be used for sc",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 5,
+      "node_id": "platoon_paper_d54d32_chunk_4",
+      "paper_id": "platoon_paper_d54d32",
+      "paper_title": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques",
+      "section_header": "abstract",
+      "page_number": 3,
+      "snippet": "V2I: vehicle-to-infrastructure; V2V: vehicle-to-vehicle. Fig. 3. Scope and sections of this paper. The scope of this survey includes concepts, techniques, applied projects, and future developments related to platoon macro scheduling and planning. GCDC: grand cooperative driving challenge; EnergyITS:",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 6,
+      "node_id": "platoon_paper_d54d32_chunk_5",
+      "paper_id": "platoon_paper_d54d32",
+      "paper_title": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques",
+      "section_header": "abstract",
+      "page_number": 5,
+      "snippet": "lateral control, and intersection collision avoidance. To highlight the main contributions of different existing reviews, we compare various reviews in Table 1 [6,9,11,18,19,22– 24,26,33,36,41]. We have noticed that most of the existing research\n\ninvestigates control, communication, and human factor",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 7,
+      "node_id": "platoon_paper_d54d32_chunk_6",
+      "paper_id": "platoon_paper_d54d32",
+      "paper_title": "Research Vehicle Engineering—Review Large-Scale Vehicle Platooning: Advances and Challenges in Scheduling and Planning Techniques",
+      "section_header": "abstract",
+      "page_number": 5,
+      "snippet": "Category Perspective Brief summary Year Ref. Overall Communication, driver, and control Respectively summarizes the technologies of CACC system communication, driver\n\ncharacteristics, and control in general 2016 Dey et al. [41] Scheduling Intersections and merging at highway on-ramps\n\nSummarizes sch",
+      "rerank_score": 1.0
+    }
+  ]
+}

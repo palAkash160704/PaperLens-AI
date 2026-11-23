@@ -1,0 +1,41 @@
+{
+  "paper_id": "2005.11401",
+  "paper_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+  "core_problem": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited... [1]",
+  "proposed_architecture": "RAG-Sequence Model The RAG-Sequence model uses the same retrieved document to generate the complete sequence. Technically, it treats the retrieved document as a single latent variable that is marginalized to get the seq2seq probability p(y|x) via a top-K approximation. Concretely... [5]",
+  "datasets_and_benchmarks": "Standard machine translation and language processing benchmarks (e.g. WMT datasets).",
+  "key_results": "Table 1 shows results for RAG along with state-of-the-art models. On all four open-domain QA tasks, RAG sets a new state of the art (only on the T5-comparable split for TQA). RAG combines the generation flexibility of the \"closed-book\" (parametric only) approaches and the perform... [7]",
+  "stated_limitations": "Requires quadratic memory with respect to sequence length and explores extensions to other modalities.",
+  "citations": [
+    {
+      "citation_index": 1,
+      "node_id": "2005.11401_chunk_1",
+      "paper_id": "2005.11401",
+      "paper_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "section_header": "Abstract",
+      "page_number": 1,
+      "snippet": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 5,
+      "node_id": "2005.11401_chunk_4",
+      "paper_id": "2005.11401",
+      "paper_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "section_header": "2.1 Models",
+      "page_number": 3,
+      "snippet": "RAG-Sequence Model The RAG-Sequence model uses the same retrieved document to generate the complete sequence. Technically, it treats the retrieved document as a single latent variable that is marginalized to get the seq2seq probability p(y|x) via a top-K approximation. Concretely, the top K document",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 7,
+      "node_id": "2005.11401_chunk_14",
+      "paper_id": "2005.11401",
+      "paper_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "section_header": "4.1 Open-domain Question Answering",
+      "page_number": 5,
+      "snippet": "Table 1 shows results for RAG along with state-of-the-art models. On all four open-domain QA tasks, RAG sets a new state of the art (only on the T5-comparable split for TQA). RAG combines the generation flexibility of the \"closed-book\" (parametric only) approaches and the performance of \"open-book\"",
+      "rerank_score": 1.0
+    }
+  ]
+}

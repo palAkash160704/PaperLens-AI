@@ -1,0 +1,41 @@
+{
+  "paper_id": "literature_survey__2__105fc2",
+  "paper_title": "literature_survey (2)",
+  "core_problem": "Addresses major challenges in sequence modeling and representation learning [1].",
+  "proposed_architecture": "This section demonstrates how CraveMap processes a user's food preferences and generates recommendations through its proposed MTGCN-based architecture. The example illustrates multimodal food ingestion, graph construction, taste representation, cross-cuisine generalisation, conte... [2]",
+  "datasets_and_benchmarks": "Standard machine translation and language processing benchmarks (e.g. WMT datasets).",
+  "key_results": "Table 1: Technical comparison of FGCN, GAME and proposed MTGCN  | Proposed MTGCN   | Unified food-intelligence represen- tation supporting personal, contex- tual and group decisions.   | Users, restaurants, dishes, ingredi- ents, cuisine labels, taste attributes, context and beha... [3]",
+  "stated_limitations": "Requires quadratic memory with respect to sequence length and explores extensions to other modalities.",
+  "citations": [
+    {
+      "citation_index": 1,
+      "node_id": "literature_survey__2__105fc2_chunk_10",
+      "paper_id": "literature_survey__2__105fc2",
+      "paper_title": "literature_survey (2)",
+      "section_header": "5. Proposed Methodology",
+      "page_number": 9,
+      "snippet": "The methodology is organised into eight stages. The first stages use capabilities already documented in the current prototype; the MTGCN training, hybrid retrieval and bias-aware ranking stages are proposed research extensions.",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 2,
+      "node_id": "literature_survey__2__105fc2_chunk_30",
+      "paper_id": "literature_survey__2__105fc2",
+      "paper_title": "literature_survey (2)",
+      "section_header": "8. Practical Example: Demonstrating the Proposed CraveMap Architecture",
+      "page_number": 13,
+      "snippet": "This section demonstrates how CraveMap processes a user's food preferences and generates recommendations through its proposed MTGCN-based architecture. The example illustrates multimodal food ingestion, graph construction, taste representation, cross-cuisine generalisation, contextual ranking and gr",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 3,
+      "node_id": "literature_survey__2__105fc2_chunk_3",
+      "paper_id": "literature_survey__2__105fc2",
+      "paper_title": "literature_survey (2)",
+      "section_header": "1.3 Technical Comparison Matrix",
+      "page_number": 3,
+      "snippet": "Table 1: Technical comparison of FGCN, GAME and proposed MTGCN\n\n| Proposed MTGCN   | Unified food-intelligence represen- tation supporting personal, contex- tual and group decisions.   | Users, restaurants, dishes, ingredi- ents, cuisine labels, taste attributes, context and behavioural events.   |",
+      "rerank_score": 1.0
+    }
+  ]
+}

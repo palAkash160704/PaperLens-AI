@@ -1,0 +1,687 @@
+{
+  "benchmark_date": "2026-11-23 21:46:42",
+  "active_llm_provider": "groq",
+  "active_llm_model": "qwen/qwen3.8-27b",
+  "total_questions": 15,
+  "metrics_summary": {
+    "keyword_fact_recall": {
+      "paperlens_ai": 91.7,
+      "naive_baseline": 58.3,
+      "delta": 33.3
+    },
+    "citation_validity_rate": {
+      "paperlens_ai": 100.0,
+      "naive_baseline": 0.0,
+      "delta": 100.0
+    },
+    "trap_refusal_accuracy": {
+      "paperlens_ai": 100.0,
+      "naive_baseline": 0.0,
+      "delta": 100.0
+    },
+    "overall_accuracy": {
+      "paperlens_ai": 93.3,
+      "naive_baseline": 46.7,
+      "delta": 46.7
+    },
+    "average_latency_sec": {
+      "paperlens_ai": 14.76,
+      "naive_baseline": 1.15
+    }
+  },
+  "category_breakdown": [
+    {
+      "category": "Broad Synthesis",
+      "count": 4,
+      "paperlens_accuracy": 100.0,
+      "baseline_accuracy": 50.0
+    },
+    {
+      "category": "Equation/Architecture",
+      "count": 4,
+      "paperlens_accuracy": 100.0,
+      "baseline_accuracy": 100.0
+    },
+    {
+      "category": "Table/Metric Lookup",
+      "count": 4,
+      "paperlens_accuracy": 75.0,
+      "baseline_accuracy": 25.0
+    },
+    {
+      "category": "Unanswerable Trap",
+      "count": 3,
+      "paperlens_accuracy": 100.0,
+      "baseline_accuracy": 0.0
+    }
+  ],
+  "detailed_results": {
+    "paperlens_ai": [
+      {
+        "id": "q01",
+        "category": "Table/Metric Lookup",
+        "question": "What BLEU score did the big Transformer model achieve on the WMT 2014 English-to-German translation task?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "28.4"
+        ],
+        "should_refuse": false,
+        "answer": "The big Transformer model achieved a BLEU score of 28.4 on the WMT 2014 English-to-German translation task [1][2][3][4].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 4,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 15.101075499958824
+      },
+      {
+        "id": "q02",
+        "category": "Table/Metric Lookup",
+        "question": "What BLEU score did the big Transformer achieve on WMT 2014 English-to-French and at what training cost in FLOPs?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "41.8"
+        ],
+        "should_refuse": false,
+        "answer": "The big Transformer achieved a BLEU score of 41.8 on the WMT 2014 English-to-French translation task [1][2][3]. The training cost for this model was 2.3 \u00d7 10^19 FLOPs [3].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 3,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 9.506463100027759
+      },
+      {
+        "id": "q03",
+        "category": "Table/Metric Lookup",
+        "question": "What exact match score did RAG-Sequence achieve on the Natural Questions open-domain QA benchmark?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "44.5"
+        ],
+        "should_refuse": false,
+        "answer": "RAG-Sequence achieved an exact match score of 44.5 on the Natural Questions open-domain QA benchmark [1][4].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 2,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 11.361839600023814
+      },
+      {
+        "id": "q04",
+        "category": "Table/Metric Lookup",
+        "question": "How many parameters are in the base Transformer model compared to the big Transformer model?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "65",
+          "213"
+        ],
+        "should_refuse": false,
+        "answer": "The uploaded papers do not contain sufficient information to answer this question.",
+        "is_grounded": false,
+        "refusal_reason": "Context lacks sufficient grounded evidence",
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 10.460026699991431
+      },
+      {
+        "id": "q05",
+        "category": "Equation/Architecture",
+        "question": "What scaling factor is applied to the dot products in Scaled Dot-Product Attention and why?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "d_k",
+          "softmax"
+        ],
+        "should_refuse": false,
+        "answer": "In Scaled Dot-Product Attention, the dot products are scaled by a factor of 1/\u221adk [1][2]. This scaling is applied to counteract the effect of large values of dk, where dot products can grow large in magnitude, pushing the softmax function into regions with extremely small gradients [1].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 2,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 11.324372400005814
+      },
+      {
+        "id": "q06",
+        "category": "Equation/Architecture",
+        "question": "How many parallel attention layers or heads are used in the base Transformer and what is d_k?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "8",
+          "64"
+        ],
+        "should_refuse": false,
+        "answer": "The base Transformer employs h = 8 parallel attention layers, or heads, and for each of these, d_k = 64 [1].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 1,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 11.255608000035863
+      },
+      {
+        "id": "q07",
+        "category": "Equation/Architecture",
+        "question": "What is the difference between RAG-Sequence and RAG-Token when marginalizing over retrieved latent documents?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "sequence",
+          "token"
+        ],
+        "should_refuse": false,
+        "answer": "The RAG-Sequence model uses the same retrieved document to generate the complete sequence, treating the document as a single latent variable that is marginalized to get the sequence probability [1][2][3]. In contrast, the RAG-Token model allows the generator to draw a different latent document for each target token, marginalizing over the documents for each token individually [1][2].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 3,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 17.786370299989358
+      },
+      {
+        "id": "q08",
+        "category": "Equation/Architecture",
+        "question": "Which retriever architecture and document index does RAG use for its non-parametric memory?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "DPR",
+          "Wikipedia"
+        ],
+        "should_refuse": false,
+        "answer": "RAG uses a Dense Passage Retriever (DPR) architecture for its non-parametric memory, which is a dense vector index of Wikipedia accessed with a pre-trained neural retriever [2][4][5].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 3,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 23.932247899996582
+      },
+      {
+        "id": "q09",
+        "category": "Broad Synthesis",
+        "question": "Summarize the main advantages of self-attention layers over recurrent and convolutional layers.",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "path",
+          "sequential"
+        ],
+        "should_refuse": false,
+        "answer": "Self-attention layers offer several key advantages over recurrent and convolutional layers. First, in terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence length n is smaller than the representation dimensionality d, which is common in sentence representations [1]. Second, self-attention layers connect all positions with a constant number of sequentially executed operations, whereas recurrent layers require O(n) sequential operations, allowing for greater parallelization [1]. Third, the path length between long-range dependencies is shorter in self-attention networks, making it easier to learn long-range dependencies compared to recurrent and convolutional layers, which have longer paths [1][3]. Additionally, self-attention can yield more interpretable models, as individual attention heads can learn to perform different tasks and exhibit behavior related to syntactic and semantic structure [1].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 2,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 16.254349099996034
+      },
+      {
+        "id": "q10",
+        "category": "Broad Synthesis",
+        "question": "Summarize the overall encoder-decoder architecture of the Transformer model.",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "encoder",
+          "decoder",
+          "attention"
+        ],
+        "should_refuse": false,
+        "answer": "The Transformer model follows an encoder-decoder architecture that relies entirely on attention mechanisms, dispensing with recurrence and convolutions [3][4]. The encoder is composed of a stack of N = 6 identical layers, each containing a multi-head self-attention mechanism and a positionwise fully connected feed-forward network, with residual connections and layer normalization applied to each sub-layer [2]. The decoder is also composed of a stack of N = 6 identical layers, which includes the same two sub-layers as the encoder plus a third sub-layer that performs multi-head attention over the output of the encoder stack [2]. Additionally, the decoder's self-attention sub-layer is modified with masking to prevent positions from attending to subsequent positions, ensuring that predictions for a given position depend only on known outputs at previous positions [2].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 3,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 13.417514499975368
+      },
+      {
+        "id": "q11",
+        "category": "Broad Synthesis",
+        "question": "Compare parametric memory with non-parametric retrieval memory in RAG.",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "parametric",
+          "non-parametric"
+        ],
+        "should_refuse": false,
+        "answer": "In RAG, parametric memory is embodied by a pre-trained sequence-to-sequence (seq2seq) model, such as BART, which stores factual knowledge in its parameters and acts as a parameterized implicit knowledge base [1][2]. Non-parametric memory, on the other hand, is a dense vector index of Wikipedia accessed via a pre-trained neural retriever, such as the Dense Passage Retriever (DPR) [1][2]. The key differences are that parametric memory cannot easily be expanded or revised, and may produce hallucinations, whereas non-parametric memory allows knowledge to be directly revised, expanded, and inspected [2]. Additionally, non-parametric memory can be easily updated at test time by replacing the index (hot-swapping) without requiring any retraining, while parametric-only models need further training to update their behavior as the world changes [3][4]. RAG combines these two types of memory in a probabilistic model trained end-to-end, where the retriever provides latent documents conditioned on the input, and the seq2seq model conditions on these documents to generate the output [2].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 4,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 23.90439330000663
+      },
+      {
+        "id": "q12",
+        "category": "Broad Synthesis",
+        "question": "How does RAG update or replace its world knowledge without retraining the entire language model?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "Wikipedia",
+          "parametric"
+        ],
+        "should_refuse": false,
+        "answer": "RAG updates or replaces its world knowledge by hot-swapping its non-parametric memory, specifically the dense vector index of Wikipedia, without requiring any retraining of the model [1][2][5]. This allows the model to access updated knowledge at test time, as demonstrated by replacing an older index with a newer one to correctly answer questions about current world leaders [2].",
+        "is_grounded": true,
+        "refusal_reason": null,
+        "citations_count": 3,
+        "keyword_recall": true,
+        "citation_valid": true,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 23.34035860002041
+      },
+      {
+        "id": "q13",
+        "category": "Unanswerable Trap",
+        "question": "What was the AWS GPU compute budget in dollars for training the Transformer model?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [],
+        "should_refuse": true,
+        "answer": "The uploaded papers do not contain sufficient information to answer this question.",
+        "is_grounded": false,
+        "refusal_reason": "Context lacks sufficient grounded evidence",
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": true,
+        "is_correct": true,
+        "latency": 15.636310100031551
+      },
+      {
+        "id": "q14",
+        "category": "Unanswerable Trap",
+        "question": "What accuracy did GPT-4o achieve on the MMLU benchmark according to the paper?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [],
+        "should_refuse": true,
+        "answer": "The uploaded papers do not contain sufficient information to answer this question.",
+        "is_grounded": false,
+        "refusal_reason": "Low retrieval relevance (top score -5.99 < -4.5)",
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": true,
+        "is_correct": true,
+        "latency": 9.201337200007401
+      },
+      {
+        "id": "q15",
+        "category": "Unanswerable Trap",
+        "question": "What was the clock speed in MHz of the Nvidia P100 GPUs used to train the base model?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [],
+        "should_refuse": true,
+        "answer": "The uploaded papers do not contain sufficient information to answer this question.",
+        "is_grounded": false,
+        "refusal_reason": "Context lacks sufficient grounded evidence",
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": true,
+        "is_correct": true,
+        "latency": 8.868179199984297
+      }
+    ],
+    "naive_baseline": [
+      {
+        "id": "q01",
+        "category": "Table/Metric Lookup",
+        "question": "What BLEU score did the big Transformer model achieve on the WMT 2014 English-to-German translation task?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "28.4"
+        ],
+        "should_refuse": false,
+        "answer": "The big Transformer model achieved a BLEU score of 28.4 on the WMT 2014 English-to-German translation task.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": true,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 0.3244585999636911
+      },
+      {
+        "id": "q02",
+        "category": "Table/Metric Lookup",
+        "question": "What BLEU score did the big Transformer achieve on WMT 2014 English-to-French and at what training cost in FLOPs?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "41.8"
+        ],
+        "should_refuse": false,
+        "answer": "The big Transformer model achieved a BLEU score of 41.0 on the WMT 2014 English-to-French translation task at less than 1/4 the training cost of the previous state-of-the-art model.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 0.34423980000428855
+      },
+      {
+        "id": "q03",
+        "category": "Table/Metric Lookup",
+        "question": "What exact match score did RAG-Sequence achieve on the Natural Questions open-domain QA benchmark?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "44.5"
+        ],
+        "should_refuse": false,
+        "answer": "Based on the provided context, the exact match score for RAG-Sequence on the Natural Questions benchmark is not explicitly stated. The text only provides a table with numerical values (17.3, 22.2, 40.1, 41.5, 44.2, 72.5, 89.5) without labeling which specific metric or benchmark they correspond to, and it primarily discusses performance on Open MS-MARCO NLG.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 0.39989419997436926
+      },
+      {
+        "id": "q04",
+        "category": "Table/Metric Lookup",
+        "question": "How many parameters are in the base Transformer model compared to the big Transformer model?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "65",
+          "213"
+        ],
+        "should_refuse": false,
+        "answer": "The provided context passages do not contain information regarding the specific number of parameters in the base or big Transformer models.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 0.2600158000132069
+      },
+      {
+        "id": "q05",
+        "category": "Equation/Architecture",
+        "question": "What scaling factor is applied to the dot products in Scaled Dot-Product Attention and why?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "d_k",
+          "softmax"
+        ],
+        "should_refuse": false,
+        "answer": "The dot products are scaled by a factor of 1/\u221adk to counteract the effect of large magnitudes for high dk values, which would otherwise push the softmax function into regions with extremely small gradients.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": true,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 1.3062409000121988
+      },
+      {
+        "id": "q06",
+        "category": "Equation/Architecture",
+        "question": "How many parallel attention layers or heads are used in the base Transformer and what is d_k?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "8",
+          "64"
+        ],
+        "should_refuse": false,
+        "answer": "The base Transformer uses 8 parallel attention heads, and the dimension $d_k$ is 64.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": true,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 1.273532199964393
+      },
+      {
+        "id": "q07",
+        "category": "Equation/Architecture",
+        "question": "What is the difference between RAG-Sequence and RAG-Token when marginalizing over retrieved latent documents?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "sequence",
+          "token"
+        ],
+        "should_refuse": false,
+        "answer": "RAG-Sequence assumes the same retrieved document is responsible for generating all tokens in the output, whereas RAG-Token allows different documents to be responsible for different tokens.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": true,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 2.353806099970825
+      },
+      {
+        "id": "q08",
+        "category": "Equation/Architecture",
+        "question": "Which retriever architecture and document index does RAG use for its non-parametric memory?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "DPR",
+          "Wikipedia"
+        ],
+        "should_refuse": false,
+        "answer": "RAG uses the Dense Passage Retriever (DPR) architecture and a dense vector index of Wikipedia as its non-parametric memory.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": true,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 2.3960958000388928
+      },
+      {
+        "id": "q09",
+        "category": "Broad Synthesis",
+        "question": "Summarize the main advantages of self-attention layers over recurrent and convolutional layers.",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "path",
+          "sequential"
+        ],
+        "should_refuse": false,
+        "answer": "Self-attention layers offer lower total computational complexity and greater parallelization potential compared to recurrent and convolutional layers, particularly when the sequence length is smaller than the representation dimensionality.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 0.2349857000517659
+      },
+      {
+        "id": "q10",
+        "category": "Broad Synthesis",
+        "question": "Summarize the overall encoder-decoder architecture of the Transformer model.",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [
+          "encoder",
+          "decoder",
+          "attention"
+        ],
+        "should_refuse": false,
+        "answer": "The Transformer follows an encoder-decoder architecture that uses stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, replacing the recurrent layers typically found in such models.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": true,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 1.2876465000445023
+      },
+      {
+        "id": "q11",
+        "category": "Broad Synthesis",
+        "question": "Compare parametric memory with non-parametric retrieval memory in RAG.",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "parametric",
+          "non-parametric"
+        ],
+        "should_refuse": false,
+        "answer": "In RAG models, parametric memory consists of a pre-trained seq2seq transformer (such as BART), while non-parametric memory is a dense vector index of Wikipedia accessed via a pre-trained neural retriever (DPR).",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": true,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": true,
+        "latency": 1.3736966999713331
+      },
+      {
+        "id": "q12",
+        "category": "Broad Synthesis",
+        "question": "How does RAG update or replace its world knowledge without retraining the entire language model?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [
+          "Wikipedia",
+          "parametric"
+        ],
+        "should_refuse": false,
+        "answer": "RAG updates or replaces its world knowledge by accessing non-parametric memory to retrieve evidence documents, rather than relying solely on the parametric knowledge stored within the model's weights. This hybrid approach allows the model to incorporate new information without the need to retrain the entire language model.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 2.464527599979192
+      },
+      {
+        "id": "q13",
+        "category": "Unanswerable Trap",
+        "question": "What was the AWS GPU compute budget in dollars for training the Transformer model?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [],
+        "should_refuse": true,
+        "answer": "The provided context does not contain information regarding the AWS GPU compute budget in dollars for training the Transformer model.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 2.447028100024909
+      },
+      {
+        "id": "q14",
+        "category": "Unanswerable Trap",
+        "question": "What accuracy did GPT-4o achieve on the MMLU benchmark according to the paper?",
+        "paper_ids": [
+          "2005.11401"
+        ],
+        "expected_keywords": [],
+        "should_refuse": true,
+        "answer": "The provided context passages do not contain any information regarding GPT-4o or its performance on the MMLU benchmark.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 0.21429999999236315
+      },
+      {
+        "id": "q15",
+        "category": "Unanswerable Trap",
+        "question": "What was the clock speed in MHz of the Nvidia P100 GPUs used to train the base model?",
+        "paper_ids": [
+          "1706.03762"
+        ],
+        "expected_keywords": [],
+        "should_refuse": true,
+        "answer": "The provided context passages do not contain information regarding the clock speed in MHz of the Nvidia P100 GPUs; they only mention the sustained single-precision floating-point capacity (9.5 TFLOPS) and the number of GPUs used.",
+        "is_grounded": true,
+        "citations_count": 0,
+        "keyword_recall": false,
+        "citation_valid": false,
+        "trap_refused": false,
+        "is_correct": false,
+        "latency": 0.6029044999741018
+      }
+    ]
+  }
+}

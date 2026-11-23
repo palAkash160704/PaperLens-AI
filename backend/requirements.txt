@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic>=2.0
+docling
+arxiv>=2.1.0,<3.0.0
+httpx
+qdrant-client[fastembed]
+google-genai
+openai
+python-dotenv
+pymupdf4llm

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q01",
+    "category": "Table/Metric Lookup",
+    "paper_ids": ["1706.03762"],
+    "question": "What BLEU score did the big Transformer model achieve on the WMT 2014 English-to-German translation task?",
+    "expected_keywords": ["28.4"],
+    "should_refuse": false
+  },
+  {
+    "id": "q02",
+    "category": "Table/Metric Lookup",
+    "paper_ids": ["1706.03762"],
+    "question": "What BLEU score did the big Transformer achieve on WMT 2014 English-to-French and at what training cost in FLOPs?",
+    "expected_keywords": ["41.8"],
+    "should_refuse": false
+  },
+  {
+    "id": "q03",
+    "category": "Table/Metric Lookup",
+    "paper_ids": ["2005.11401"],
+    "question": "What exact match score did RAG-Sequence achieve on the Natural Questions open-domain QA benchmark?",
+    "expected_keywords": ["44.5"],
+    "should_refuse": false
+  },
+  {
+    "id": "q04",
+    "category": "Table/Metric Lookup",
+    "paper_ids": ["1706.03762"],
+    "question": "How many parameters are in the base Transformer model compared to the big Transformer model?",
+    "expected_keywords": ["65", "213"],
+    "should_refuse": false
+  },
+  {
+    "id": "q05",
+    "category": "Equation/Architecture",
+    "paper_ids": ["1706.03762"],
+    "question": "What scaling factor is applied to the dot products in Scaled Dot-Product Attention and why?",
+    "expected_keywords": ["d_k", "softmax"],
+    "should_refuse": false
+  },
+  {
+    "id": "q06",
+    "category": "Equation/Architecture",
+    "paper_ids": ["1706.03762"],
+    "question": "How many parallel attention layers or heads are used in the base Transformer and what is d_k?",
+    "expected_keywords": ["8", "64"],
+    "should_refuse": false
+  },
+  {
+    "id": "q07",
+    "category": "Equation/Architecture",
+    "paper_ids": ["2005.11401"],
+    "question": "What is the difference between RAG-Sequence and RAG-Token when marginalizing over retrieved latent documents?",
+    "expected_keywords": ["sequence", "token"],
+    "should_refuse": false
+  },
+  {
+    "id": "q08",
+    "category": "Equation/Architecture",
+    "paper_ids": ["2005.11401"],
+    "question": "Which retriever architecture and document index does RAG use for its non-parametric memory?",
+    "expected_keywords": ["DPR", "Wikipedia"],
+    "should_refuse": false
+  },
+  {
+    "id": "q09",
+    "category": "Broad Synthesis",
+    "paper_ids": ["1706.03762"],
+    "question": "Summarize the main advantages of self-attention layers over recurrent and convolutional layers.",
+    "expected_keywords": ["path", "sequential"],
+    "should_refuse": false
+  },
+  {
+    "id": "q10",
+    "category": "Broad Synthesis",
+    "paper_ids": ["1706.03762"],
+    "question": "Summarize the overall encoder-decoder architecture of the Transformer model.",
+    "expected_keywords": ["encoder", "decoder", "attention"],
+    "should_refuse": false
+  },
+  {
+    "id": "q11",
+    "category": "Broad Synthesis",
+    "paper_ids": ["2005.11401"],
+    "question": "Compare parametric memory with non-parametric retrieval memory in RAG.",
+    "expected_keywords": ["parametric", "non-parametric"],
+    "should_refuse": false
+  },
+  {
+    "id": "q12",
+    "category": "Broad Synthesis",
+    "paper_ids": ["2005.11401"],
+    "question": "How does RAG update or replace its world knowledge without retraining the entire language model?",
+    "expected_keywords": ["Wikipedia", "parametric"],
+    "should_refuse": false
+  },
+  {
+    "id": "q13",
+    "category": "Unanswerable Trap",
+    "paper_ids": ["1706.03762"],
+    "question": "What was the AWS GPU compute budget in dollars for training the Transformer model?",
+    "expected_keywords": [],
+    "should_refuse": true
+  },
+  {
+    "id": "q14",
+    "category": "Unanswerable Trap",
+    "paper_ids": ["2005.11401"],
+    "question": "What accuracy did GPT-4o achieve on the MMLU benchmark according to the paper?",
+    "expected_keywords": [],
+    "should_refuse": true
+  },
+  {
+    "id": "q15",
+    "category": "Unanswerable Trap",
+    "paper_ids": ["1706.03762"],
+    "question": "What was the clock speed in MHz of the Nvidia P100 GPUs used to train the base model?",
+    "expected_keywords": [],
+    "should_refuse": true
+  }
+]

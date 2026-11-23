@@ -1,0 +1,61 @@
+{
+  "paper_id": "research_paper__2__542d78",
+  "paper_title": "research_paper (2)",
+  "core_problem": "The fast growth of smart cities infrastructure has given rise to. to the extensive use of surveillance systems throughout both in the public and private settings, producing volumes of volumes. of continuous visual information. Most of the existing grew, in spi... [1]",
+  "proposed_architecture": "Fusion of visual and acoustic modalities greatly decrease the false-positive rates of unimodal. systems.  Pang et al. [4] showed that fusing visual features. video frames containing audio features give a more. strong discriminative power of violent and non-violent scenes. than pu... [2]",
+  "datasets_and_benchmarks": "Standard machine translation and language processing benchmarks (e.g. WMT datasets).",
+  "key_results": "In order to assure reproducibility and an objective evaluation of the ARGUS methodology, we adopt a standard experimental procedure regarding the splitting of data, the training of the system, and its hyperparameters. Such an evaluation strategy is typical for multimodal surveill... [6]",
+  "stated_limitations": "This paper presents ARGUS, a multi-modal and edge-native framework for proactive safety monitoring using vision and sound to measure behavior.  Key results indicate that integration of multiple modalities improves detection accuracy and reduces false positives... [8]",
+  "citations": [
+    {
+      "citation_index": 1,
+      "node_id": "research_paper__2__542d78_chunk_1",
+      "paper_id": "research_paper__2__542d78",
+      "paper_title": "research_paper (2)",
+      "section_header": "I. INTRODUCTION",
+      "page_number": 1,
+      "snippet": "The fast growth of smart cities infrastructure has given rise to. to the extensive use of surveillance systems throughout both in the public and private settings, producing volumes of volumes. of continuous visual information. Most of the existing grew, in spite of this growth. systems are essential",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 2,
+      "node_id": "research_paper__2__542d78_chunk_6",
+      "paper_id": "research_paper__2__542d78",
+      "paper_title": "research_paper (2)",
+      "section_header": "D. D. Multimodal Fusion Architectures",
+      "page_number": 2,
+      "snippet": "Fusion of visual and acoustic modalities greatly decrease the false-positive rates of unimodal. systems.\n\nPang et al. [4] showed that fusing visual features. video frames containing audio features give a more. strong discriminative power of violent and non-violent scenes. than purely visual cues.\n\nV",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 4,
+      "node_id": "research_paper__2__542d78_chunk_10",
+      "paper_id": "research_paper__2__542d78",
+      "paper_title": "research_paper (2)",
+      "section_header": "ARGUS v5: Triple-Engine System Architecture for Real-Time Behavior Detection",
+      "page_number": 3,
+      "snippet": "NotebookLM\n\nFig. 1: ARGUS Multimodal System Architecture Pipeline.\n\nThe ARGUS system is created to be a modular, edge-native architecture with capability to process data in real-time with low latency. The architecture consists of three major subsystems (i) visual intelligence, (ii) acoustic intellig",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 6,
+      "node_id": "research_paper__2__542d78_chunk_16",
+      "paper_id": "research_paper__2__542d78",
+      "paper_title": "research_paper (2)",
+      "section_header": "G. Experimental Setup and Evaluation Protocol",
+      "page_number": 4,
+      "snippet": "In order to assure reproducibility and an objective evaluation of the ARGUS methodology, we adopt a standard experimental procedure regarding the splitting of data, the training of the system, and its hyperparameters. Such an evaluation strategy is typical for multimodal surveillance research as wel",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 8,
+      "node_id": "research_paper__2__542d78_chunk_18",
+      "paper_id": "research_paper__2__542d78",
+      "paper_title": "research_paper (2)",
+      "section_header": "V. CONCLUSION",
+      "page_number": 6,
+      "snippet": "This paper presents ARGUS, a multi-modal and edge-native framework for proactive safety monitoring using vision and sound to measure behavior.\n\nKey results indicate that integration of multiple modalities improves detection accuracy and reduces false positives. The risk score and edge-based implemen",
+      "rerank_score": 1.0
+    }
+  ]
+}

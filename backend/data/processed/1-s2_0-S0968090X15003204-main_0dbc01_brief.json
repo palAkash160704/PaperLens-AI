@@ -1,0 +1,91 @@
+{
+  "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+  "paper_title": "1-s2.0-S0968090X15003204-main",
+  "core_problem": "The fundamental challenge is to minimize total fuel consumption for heavy-duty vehicles (HDVs) on a road network by optimally coordinating the formation and dissolution of vehicle platoons, a task complicated by the fact that the problem is NP-hard even for simple cases like same-start scenarios [2][3]. While platooning can reduce fuel use by up to 20% for trailing vehicles, existing research largely focuses on maintaining existing platoons rather than the complex routing decisions required to maximize fuel savings across a network of multiple trucks with varying start points, destinations, and deadlines [2].",
+  "proposed_architecture": "The authors propose a mathematical framework defining the 'platooning problem' as a vehicle routing problem on a graph, proving properties such as the absence of cycles in optimal paths and the ability to merge split paths without increasing cost [4]. To solve this NP-hard problem, they formulate it as an Integer Linear Program (ILP) for exact solutions on small instances and develop two heuristics—the Best Pair heuristic and the Hub heuristic—combined with a local search improvement algorithm to handle larger, real-world instances [3][6][7]. The ILP formulation uses binary variables for edge traversal and platoon synchronization, with logical constraints converted into linear inequalities to be solved by standard solvers like Gurobi [6][7].",
+  "datasets_and_benchmarks": "Experiments were conducted on the German Autobahn road network, testing instances with varying numbers of HDVs [5]. The evaluation compares the total fuel cost of the proposed platoon routings against a 'trivial routing' baseline, which is the sum of shortest paths for individual trucks, accounting for 'natural platooning' where trucks voluntarily form groups on shared paths [5][8]. The benchmarks include both 'same-start' scenarios (all trucks starting at the same node) and 'different-starts' scenarios, with problem sizes ranging from 10 to over 200 trucks [5][8].",
+  "key_results": "The study demonstrates that optimal platoon routings can achieve fuel savings of 9-10% in same-start scenarios, which is near the theoretical maximum given a 10% fuel reduction factor for platooning [9]. For different-start instances with as few as 10 trucks, savings exceeding 1.5% were achieved in the majority of cases [8]. The Best Pair heuristic performed well for up to 200 HDVs in same-start cases, often finding optimal solutions, while the local search algorithm significantly improved the results of both the Best Pair and Hub heuristics, bringing them close to optimality in most instances [8]. Exact ILP solutions were obtained for up to 200 trucks in same-start cases and up to 10 trucks in different-start cases [9].",
+  "stated_limitations": "The authors note that the problem is NP-hard, making exact solutions infeasible for large-scale instances with hundreds or thousands of trucks, thus necessitating heuristic approaches for real-world application [3][9]. The current evaluation is limited to small problem instances, and the performance of the heuristics on much larger test cases remains to be evaluated [9]. Additionally, the model assumes fixed travel times independent of traffic congestion, ignoring the impact of dynamic traffic on fuel consumption and platooning benefits [2]. The heuristics can make irreversible early decisions that lead to suboptimal solutions, although local search mitigates this [8].",
+  "citations": [
+    {
+      "citation_index": 2,
+      "node_id": "1-s2_0-S0968090X15003204-main_0dbc01_chunk_5",
+      "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+      "paper_title": "1-s2.0-S0968090X15003204-main",
+      "section_header": "1. Introduction",
+      "page_number": 1,
+      "snippet": "Companies have significant economic and environmental incentives for reducing the fuel consumption of heavy-duty vehicles (HDVs). Since fuel costs represent a third of the total operational costs of an HDV (Schittler, 2003), even small advances in fuel efficiency will noticeably increase profits for",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 3,
+      "node_id": "1-s2_0-S0968090X15003204-main_0dbc01_chunk_6",
+      "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+      "paper_title": "1-s2.0-S0968090X15003204-main",
+      "section_header": "1. Introduction",
+      "page_number": 2,
+      "snippet": "In this paper we attempt to maximize the amount of fuel saved by vehicles capable of platooning on a road network. If platooning opportunities are present, the routes may differ slightly from the obvious shortest path routes, in order to maximize fuel savings. We formally define the platooning probl",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 4,
+      "node_id": "1-s2_0-S0968090X15003204-main_0dbc01_chunk_9",
+      "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+      "paper_title": "1-s2.0-S0968090X15003204-main",
+      "section_header": "2.2. Basic results",
+      "page_number": 4,
+      "snippet": "We can now use these definitions to prove properties about solutions to the platooning problem.\n\nDefinition 7. A cycle in a truck path P is a nonempty contiguous subpath of P, namely, a subsequence of P, where the first and last vertex are the same.\n\nTheorem 2.1. In an optimal platoon routing for th",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 5,
+      "node_id": "1-s2_0-S0968090X15003204-main_0dbc01_chunk_25",
+      "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+      "paper_title": "1-s2.0-S0968090X15003204-main",
+      "section_header": "6.1. Results",
+      "page_number": 14,
+      "snippet": "We now present the results from running Gurobi on the exact ILP formulations and the heuristic solvers on problem instances with a variable amount of trucks on the German road network. The results are presented by using box plots.\n\nWhen calculating the fuel savings, we compare the total fuel cost fo",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 6,
+      "node_id": "1-s2_0-S0968090X15003204-main_0dbc01_chunk_30",
+      "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+      "paper_title": "1-s2.0-S0968090X15003204-main",
+      "section_header": "Appendix B. Conversion of logical constraints",
+      "page_number": 17,
+      "snippet": "For completeness, we now present the conversion of the logical constraints in Section 4 to linear inequalities.\n\nB.1. Same-start unlimited ILP\n\nRecall the logical constraints in (2).\n\nThey are equivalent to a number of linear inequalities, namely, the following.\n\nSuppose xijn is set for some 1 ⩽ n ⩽",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 7,
+      "node_id": "1-s2_0-S0968090X15003204-main_0dbc01_chunk_31",
+      "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+      "paper_title": "1-s2.0-S0968090X15003204-main",
+      "section_header": "B.2. Different-starts unlimited ILP",
+      "page_number": 18,
+      "snippet": "We will now perform the conversion of logical to linear constraints for the unlimited ILP. Let\n\nThe logical constraints in (7)\n\nare equivalent to the following linear inequalities.\n\nIf ðxijn ^ xkinÞ is false, then (7) does not enforce any constraints on tijn or tkin. The same is true for (B.3) since",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 8,
+      "node_id": "1-s2_0-S0968090X15003204-main_0dbc01_chunk_26",
+      "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+      "paper_title": "1-s2.0-S0968090X15003204-main",
+      "section_header": "6.2. Discussion",
+      "page_number": 15,
+      "snippet": "From Figs. 5(a) and (b) we conclude that significant fuel savings can be achieved from platooning HDVs. The same-start problem instances naturally present more platooning opportunities since more vehicles are present in the larger examples and the trucks' positions are more concentrated, resulting i",
+      "rerank_score": 1.0
+    },
+    {
+      "citation_index": 9,
+      "node_id": "1-s2_0-S0968090X15003204-main_0dbc01_chunk_27",
+      "paper_id": "1-s2_0-S0968090X15003204-main_0dbc01",
+      "paper_title": "1-s2.0-S0968090X15003204-main",
+      "section_header": "7. Conclusion",
+      "page_number": 17,
+      "snippet": "In this paper we minimized the total fuel consumption for HDVs traveling between nodes in a road network by introducing vehicle platooning. The problem of achieving optimal vehicle routings in this aspect was modeled as a graph routing problem-the vehicle platooning problem-which we showed is NP-har",
+      "rerank_score": 1.0
+    }
+  ]
+}
